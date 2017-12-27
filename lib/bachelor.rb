@@ -62,9 +62,9 @@ def get_average_age_for_season(data, season)
   divide = ages.size
   total = 0
   ages.each do |age|
-    age = age.to_i
+    age = age.to_f
     total += age
     total
   end
-  total/divide
+  total/divide.round
 end
